@@ -9,7 +9,7 @@ const options = {
 const map = L.map('mapid', options).setView([-24.0179396, -46.5333159], 15);
 
 const icon = L.icon({
-  iconUrl: './public/images/map-marker.svg',
+  iconUrl: '/images/map-marker.svg',
   iconSize: [58, 68],
   iconAnchor: [29, 68]
 });

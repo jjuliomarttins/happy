@@ -13,19 +13,19 @@
   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
   crossorigin=""></script>
 
-  <link rel="shortcut icon" href="./public/images/logo-icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/logo-icon.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="./public/styles/main.css">
-  <link rel="stylesheet" href="./public/styles/animations.css">
-  <link rel="stylesheet" href="./public/styles/page-orphanages.css">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/animations.css">
+  <link rel="stylesheet" href="/styles/page-orphanages.css">
 </head>
 <body>
   <div id="page-orphanages">
     <aside class="animate-right">
       <header>
-        <a href="index.html">
-          <img src="./public/images/map-marker.svg" alt="Logomarca Happy">
+        <a href="/">
+          <img src="/images/map-marker.svg" alt="Logomarca Happy">
         </a>
         <h2>Escolha um orfanato no mapa</h2>
         <p>Muitas crianças então esperando sua visita :)</p>
@@ -38,15 +38,28 @@
     </aside>
 
     <div id="mapid" class="animate-appear"></div>
+
+
+    <div class="orphanages">
+      {{#each orphanages}}
+        <span hidden
+          data-id="{{this.id}}"
+          data-name="{{this.name}}"
+          data-lat="{{this.lat}}"
+          data-lng="{{this.lng}}"
+        ></span>
+      {{/each}}
+    </div>
+
     <a
-      href="create-orphanage.html"
+      href="/create-orphanage"
       class="create-orphanage"
       title="Cadastre um orfanato"
     >
-      <img src="./public/images/plus.svg" alt="Criar orfanato">
+      <img src="/images/plus.svg" alt="Criar orfanato">
     </a>
   </div>
 
-  <script src="./public/scripts/page-orphanages.js"></script>
+  <script src="/scripts/page-orphanages.js"></script>
 </body>
 </html>
