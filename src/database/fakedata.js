@@ -3,8 +3,8 @@ module.exports = [
     id: 1,
     lat: "-24.0057771",
     lng: "-46.4155127",
-    name: 'Lar das meninas',
-    description: 'Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social.',
+    name: "Lar das meninas",
+    description: "Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social.",
     images: [
       "https://images.unsplash.com/photo-1595967783875-c371f35d8049?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 
@@ -18,8 +18,8 @@ module.exports = [
     id: 2,
     lat: "-24.0084851",
     lng: "-46.4183927",
-    name: 'Lar dos meninos',
-    description: 'Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social.',
+    name: "Lar dos meninos",
+    description: "Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social.",
     images: [
       "https://images.unsplash.com/photo-1595967783875-c371f35d8049?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9",
 

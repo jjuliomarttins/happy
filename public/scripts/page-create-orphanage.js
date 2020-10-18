@@ -1,4 +1,4 @@
-const map = L.map('mapid').setView([-24.0179396, -46.5333159], 15);
+const map = L.map('mapid').setView([-24.0084851,-46.4183927], 13);
 const icon = L.icon({
   iconUrl: '/images/map-marker.svg',
   iconSize: [58, 68],

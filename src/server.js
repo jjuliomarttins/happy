@@ -4,7 +4,9 @@ const pages = require('./pages.js');
 
 const server = express();
 
-server.use(express.static('public'));
+server
+  .use(express.urlencoded({ extended: true }))
+  .use(express.static('public'));
 
 server
   .set('views', path.join(__dirname, 'views'))
@@ -14,6 +16,7 @@ server
   .get('/', pages.index)
   .get('/orphanages', pages.orphanages)
   .get('/orphanage', pages.orphanage)
-  .get('/create-orphanage', pages.createOrphanage);
+  .get('/create-orphanage', pages.createOrphanage)
+  .post('/save-orphanage', pages.saveOrphanage);
 
 server.listen(5500);
